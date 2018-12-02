@@ -1,0 +1,22 @@
+    <% include ./partials/header %>
+    
+
+
+
+<h1>Hello And Welcome. Please Sign up</h1>
+<form action="/register" method="post">
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button>sign Up</button>
+</form>
+
+<!--TO GET TO LOGIN PAGE-->
+<!--TO GET TO LOGIN PAGE-->
+  <button id="myButton" class="float-left submit-button" >Go to Login Page</button>
+  <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+          location.href = "/login";
+      };
+  </script>
+
+
