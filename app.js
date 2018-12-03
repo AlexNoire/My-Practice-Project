@@ -45,7 +45,6 @@ app.post("/register", function(req, res) {
   });
 });
 
-// YALALALLAL
 
 app.post("/login", passport.authenticate("local",
     {
