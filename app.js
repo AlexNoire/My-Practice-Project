@@ -40,9 +40,12 @@ app.post("/register", function(req, res) {
       }
       passport.authenticate("local")(req, res, function(){
           res.render("home");
+          console.log(req.user)
       });
   });
 });
+
+// YALALALLAL
 
 app.post("/login", passport.authenticate("local",
     {
@@ -58,6 +61,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/home", function(req, res) {
+  console.log(req.user);
   res.render("home");
 });
 
